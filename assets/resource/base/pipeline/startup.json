@@ -1,0 +1,51 @@
+{
+    "StartUp": {
+        "next": [
+            "HomeFlag",
+            "Start_OK",
+            "TapStart",
+            "NoticeSkip",
+            "Start_Enter",
+            "StartGame"
+        ]
+    },
+    "HomeFlag": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/Home.png",
+        "action": "Click"
+    },
+    "StartGame": {
+        "is_sub": true,
+        "action": "StartApp",
+        "package": "games.johren.cravesaga.erolabsch.gg_x_a/org.cocos2dx.javascript.AppActivity",
+        "times_limit": 3
+    },
+    "Start_OK": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "StartUp/OK.png",
+        "threshold": 0.9,
+        "action": "Click"
+    },
+    "TapStart": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "StartUp/Start.png",
+        "threshold": 0.9,
+        "action": "Click"
+    },
+    "NoticeSkip": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "StartUp/Skip.png",
+        "threshold": 0.9,
+        "action": "Click"
+    },
+    "Start_Enter": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "StartUp/Enter.png",
+        "threshold": 0.9,
+        "action": "Click"
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "GachaPlatinum": {
+        "next": [
+            "Gacha_Box",
+            "Gacha_Gacha",
+            "Gacha_OK",
+            "Gacha_Reset",
+            "Gacha_ResetConfirm",
+            "Gacha_Platinum",
+            "Gacha_Enter"
+        ]
+    },
+    "GachaArms": {
+        "next": [
+            "Gacha_Box",
+            "Gacha_Gacha",
+            "Gacha_OK",
+            "Gacha_Reset",
+            "Gacha_ResetConfirm",
+            "Gacha_Arms",
+            "Gacha_Enter"
+        ]
+    },
+    "Gacha_Box": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "Gacha/Box.png",
+        "threshold": 0.9,
+        "action": "Click"
+    },
+    "Gacha_Gacha": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "Gacha/Gacha.png",
+        "threshold": 0.9,
+        "action": "Click"
+    },
+    "Gacha_OK": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "Gacha/OK.png",
+        "threshold": 0.9,
+        "action": "Click"
+    },
+    "Gacha_Reset": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "Gacha/Reset.png",
+        "threshold": 0.9,
+        "action": "Click"
+    },
+    "Gacha_ResetConfirm": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "Gacha/ResetConfirm.png",
+        "threshold": 0.9,
+        "action": "Click"
+    },
+    "Gacha_Platinum": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "Gacha/Platinum.png",
+        "threshold": 0.9,
+        "action": "Click"
+    },
+    "Gacha_Arms": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "Gacha/Arms.png",
+        "threshold": 0.9,
+        "action": "Click"
+    },
+    "Gacha_Enter": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "Gacha/Enter.png",
+        "threshold": 0.9,
+        "action": "Click"
+    }
+}
