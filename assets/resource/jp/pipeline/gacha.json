@@ -1,0 +1,48 @@
+{
+    "GachaPlatinum": {
+        "next": [
+            "Gacha_Gacha",
+            "Gacha_OK",
+            "Gacha_Reset",
+            "Gacha_ResetConfirm"
+        ]
+    },
+    "GachaArms": {
+        "next": [
+            "Gacha_Gacha",
+            "Gacha_OK",
+            "Gacha_Reset",
+            "Gacha_ResetConfirm"
+        ]
+    },
+    "Gacha_Gacha": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "Gacha/Gacha.png",
+        "threshold": 0.9,
+        "action": "Click"
+    },
+    "Gacha_OK": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "Gacha/OK.png",
+        "threshold": 0.7,
+        "action": "Click",
+        "post_delay": 3000
+    },
+    "Gacha_Reset": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "Gacha/Reset.png",
+        "threshold": 0.9,
+        "action": "Click"
+    },
+    "Gacha_ResetConfirm": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "Gacha/ResetConfirm.png",
+        "threshold": 0.9,
+        "action": "Click",
+        "post_delay": 3000
+    }
+}

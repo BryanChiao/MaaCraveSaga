@@ -17,7 +17,7 @@
     "StartGame": {
         "is_sub": true,
         "action": "StartApp",
-        "package": "games.johren.cravesaga.erolabsch.gg_x_a/org.cocos2dx.javascript.AppActivity",
+        "package": "jp.co.dmm.dmmgames.gg_x_a/com.dmm.games.android.sdk.store.DmmGamesStoreSdkMainActivity",
         "times_limit": 3
     },
     "Start_OK": {

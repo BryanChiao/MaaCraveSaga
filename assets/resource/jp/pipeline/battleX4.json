@@ -1,0 +1,110 @@
+{
+    "BattleX4": {
+        "next": [
+            "HomeFlag",
+            "X4_X1",
+            "X4_X2",
+            "X4_X3",
+            "X4_Battle",
+            "X4_Next",
+            "X4_Again",
+            "X4_Red"
+        ]
+    },
+    "X4_Stop": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/Home.png",
+        "action": "DoNothing"
+    },
+    "X4_X1": {
+        "recognition": "TemplateMatch",
+        "template": "BattleX4/X1.png",
+        "threshold": 0.95,
+        "action": "Click",
+        "next": [
+            "X4_X2",
+            "X4_Red",
+            "X4_X1"
+        ]
+    },
+    "X4_X2": {
+        "recognition": "TemplateMatch",
+        "template": "BattleX4/X2.png",
+        "threshold": 0.95,
+        "action": "Click",
+        "next": [
+            "X4_X3",
+            "X4_Red",
+            "X4_X1",
+            "X4_X2"
+        ]
+    },
+    "X4_X3": {
+        "recognition": "TemplateMatch",
+        "template": "BattleX4/X3.png",
+        "threshold": 0.95,
+        "action": "Click",
+        "next": [
+            "X4_X4",
+            "X4_Red",
+            "X4_X1",
+            "X4_X2",
+            "X4_X3"
+        ]
+    },
+    "X4_X4": {
+        "recognition": "TemplateMatch",
+        "template": "BattleX4/X4.png",
+        "threshold": 0.95,
+        "action": "DoNothing",
+        "next": [
+            "BattleX4"
+        ]
+    },
+    "X4_Battle": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "BattleX4/Battle.png",
+        "threshold": 0.9,
+        "action": "Click"
+    },
+    "X4_Next": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "BattleX4/Next.png",
+        "threshold": 0.9,
+        "action": "Click"
+    },
+    "X4_Again": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "BattleX4/Again.png",
+        "threshold": 0.9,
+        "action": "Click",
+        "post_delay": 1000
+    },
+    "X4_Red": {
+        "recognition": "TemplateMatch",
+        "template": "BattleX4/BigRed.png",
+        "threshold": 0.9,
+        "target_offset": [
+            400,
+            30,
+            0,
+            0
+        ],
+        "action": "Click",
+        "next": [
+            "X4_UseConfirm"
+        ]
+    },
+    "X4_UseConfirm": {
+        "recognition": "TemplateMatch",
+        "template": "BattleX4/UseConfirm.png",
+        "threshold": 0.9,
+        "action": "Click",
+        "next": [
+            "BattleX4"
+        ]
+    }
+}
